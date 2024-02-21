@@ -60,6 +60,12 @@ print(f"Example 1 - Popped value: {popped_value1}")
 print("Example 1 - Heap after pop:", heap1.heap)
 print("\n")
 
+''' output: 
+Example 1 - Original heap: [3, 18, 23, 19, 25]
+Example 1 - Heap after push(15): [3, 18, 15, 19, 25, 23]
+Example 1 - Popped value: 3
+Example 1 - Heap after pop: [15, 18, 23, 19, 25] '''
+
 # Example 2
 heap2 = MinHeap()
 heap2.build_min_heap([3, 5, 9, 2, 24])
@@ -71,6 +77,13 @@ print(f"Example 2 - Popped value: {popped_value2}")
 print("Example 2 - Heap after pop:", heap2.heap)
 print("\n")
 
+''' output: 
+Example 2 - Original heap: [2, 3, 9, 5, 24]
+Example 2 - Heap after push(10): [2, 3, 9, 5, 24, 10]
+Example 2 - Popped value: 2
+Example 2 - Heap after pop: [3, 5, 9, 10, 24] '''
+
+
 # Example 3
 heap3 = MinHeap()
 heap3.build_min_heap([21, 14, 32, 18, 27])
@@ -80,3 +93,9 @@ print("Example 3 - Heap after push(15):", heap3.heap)
 popped_value3 = heap3.pop()
 print(f"Example 3 - Popped value: {popped_value3}")
 print("Example 3 - Heap after pop:", heap3.heap)
+
+''' output: 
+Example 3 - Original heap: [14, 18, 32, 21, 27]
+Example 3 - Heap after push(15): [14, 18, 15, 21, 27, 32]
+Example 3 - Popped value: 14
+Example 3 - Heap after pop: [15, 18, 32, 21, 27] '''
